@@ -1,0 +1,18 @@
+{
+  "name": "lint-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:TECHF5VE/Lint-Config.git",
+  "author": "FredTsang <17154608+FredZeng@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "husky": "^4.3.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
